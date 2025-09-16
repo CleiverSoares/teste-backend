@@ -1,0 +1,27 @@
+{
+  "name": "ai-gateway-backend-simple",
+  "version": "1.0.0",
+  "description": "Gateway de IA por Créditos - Backend Simplificado",
+  "main": "server-simple.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server-simple.js",
+    "dev": "node --watch server-simple.js",
+    "init-db": "node scripts/init-db-simple.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ai", "gateway", "stellar", "ollama", "credits"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "dotenv": "^16.4.5",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

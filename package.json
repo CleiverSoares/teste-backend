@@ -1,0 +1,39 @@
+{
+  "name": "ai-gateway-backend",
+  "version": "1.0.0",
+  "description": "Gateway de IA por Créditos - Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "init-db": "node scripts/init-db.js",
+    "reset-credits": "node scripts/reset-credits.js",
+    "fix-credits": "node scripts/fix-credits.js",
+    "create-test-user": "node scripts/create-test-user.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "gateway",
+    "stellar",
+    "ollama",
+    "credits"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^11.3.0",
+    "axios": "^1.7.7",
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
